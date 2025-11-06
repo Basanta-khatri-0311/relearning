@@ -59,6 +59,9 @@ main {
     border: none;
     padding: 14px 30px;
     border-radius: 24px;
+    transition: all 0.8s ease;
+    cursor: pointer;
+
 }
 
 .buttons>button:hover {
@@ -94,4 +97,27 @@ main {
 .buttons,
 .socials {
     margin-top: 1rem;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode main {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .buttons > button {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .socials > a {
+  color: #f5f5f5;
+}
+
+
+body, main, button, a {
+  transition: background-color 0.3s, color 0.3s;
 }
